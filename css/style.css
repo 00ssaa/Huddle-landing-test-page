@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --violet: hsl(257, 40%, 49%);
+    --Magenta: hsl(300, 69%, 71%);
+
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.container{
+    background-color: var(--violet);
+    background-image: url(../images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    height: 100vh;
+    padding: 2em 4em;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar > img{
+    width: 120px;
+}
+
+.image > img{
+    width: 100%;
+}
+
+.main-box{
+    margin-top: 6.3em;
+    padding: 0 2em;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    height: 70vh;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content-writeups h1{
+    font-size: 2.2rem;
+    font-family: 'Poppins', 'sans-serif';
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.content-writeups p{
+    font-size: 1.6rem;
+    font-family: 'Open Sans', 'sans-serif';
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+button{
+    color:  hsl(257, 40%, 49%);
+    padding: 1rem 7rem;
+    border-radius: 2rem;
+    border-style: none;
+}
+
+.fa-facebook-f, .fa-twitter, .fa-instagram{
+    color: white;
+    padding: 1rem;
+    margin: 6rem 0.5rem 0 0.5rem;
+    border: 1px solid white;
+    border-radius: 8rem;
+    width: 1rem;
+}
+
+@media screen and (min-width:1340px) {
+    .container{
+        background-image: url(../images/bg-desktop.svg);
+        background-position: left;
+    }
+    
+    .main-box{
+        display: flex;
+        flex-wrap: nowrap;
+        text-align: left;
+    }
+
+    .navbar > img{
+        width: 200px;
+    } 
+
+    .image > img{
+        width: 60rem;
+    }
+
+    .content-writeups h1{
+        margin: 4rem 10rem 0 3rem;
+        font-size: 4rem;
+        font-weight: 700;
+    }
+
+    .content-writeups p{
+        margin: 2rem 2rem 0 3rem;
+        font-size: 2rem;
+        font-weight: 400;
+    }
+
+    button{
+        font-size: 1.8rem;
+        border-radius: 5rem;
+        margin: 2rem 0 0 3rem;
+        padding: 2rem 8rem; 
+    }
+
+    .icons{
+       display: flex;
+       justify-content: flex-end;
+    }
+}
